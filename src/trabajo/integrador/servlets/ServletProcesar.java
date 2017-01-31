@@ -10,13 +10,12 @@ import java.util.Date;
 import java.util.Properties;
 
 
+
 import javax.mail.Message;
-import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.mail.PasswordAuthentication;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -49,6 +48,7 @@ public class ServletProcesar extends HttpServlet {
 		return conn;
 	}
 
+	@SuppressWarnings("restriction")
 	public void enviarmail(String nomcompleto, String correofinal,
 			String nrocuenta, String montoinicial, String montofinal,
 			String monedainicial, String monedafinal, String nomusuario, String usuario) {

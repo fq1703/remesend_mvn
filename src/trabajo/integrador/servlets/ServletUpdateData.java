@@ -247,7 +247,7 @@ public class ServletUpdateData extends HttpServlet {
 		HttpSession sesion = request.getSession(true);
 
 		String user = (String) sesion.getAttribute("correo_login");
-		boolean resultado;
+		
 		String mensaje;
 
 		String nombres = request.getParameter("user");
@@ -262,10 +262,10 @@ public class ServletUpdateData extends HttpServlet {
 		int mes = Integer.parseInt(request.getParameter("mes"));
 		int año = Integer.parseInt(request.getParameter("año"));
 
-		resultado = actualizar(user, nombres, email, dni, pais, ciudad,
+		boolean resultado = actualizar(user, nombres, email, dni, pais, ciudad,
 				direccion, postal, telefono, dia, mes, año);
 
-		if (resultado = true) {
+		if (resultado) {
 			mensaje = "Datos guardados con exito";
 
 		} else {
