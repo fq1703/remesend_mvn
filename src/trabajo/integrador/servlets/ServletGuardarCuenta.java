@@ -33,8 +33,7 @@ public class ServletGuardarCuenta extends HttpServlet {
 		sesion.setAttribute("ses_ncuenta", ncuenta); 
 		
 		
-		request.getRequestDispatcher("/Transferencia3.jsp").forward(request,
-				response);
+		request.getRequestDispatcher("/Transferencia3.jsp").forward(request,response);
 		
 	}
 

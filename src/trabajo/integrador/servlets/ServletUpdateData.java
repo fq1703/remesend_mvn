@@ -16,6 +16,7 @@ import javax.servlet.http.HttpSession;
 import trabajo.integrador.dto.Datos;
 import trabajo.integrador.dto.Usuario;
 
+
 /**
  * Servlet implementation class ServletUpdateData
  */
@@ -165,18 +166,14 @@ public class ServletUpdateData extends HttpServlet {
 				ps.setInt(10, año);
 				ps.setInt(11, telefono);
 				ps.setString(12, user);
-
 				ps4.setString(1, email);
 				ps4.setString(2, nombres);
 				ps4.setString(3, user);
-
 				ps.executeUpdate();
 				ps4.executeUpdate();
-
 				conn.close();
 				ps.close();
 				ps4.close();
-
 				flag = true;
 
 			}
@@ -241,8 +238,7 @@ public class ServletUpdateData extends HttpServlet {
 
 	}
 
-	protected void service(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+	protected void service(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
 
 		HttpSession sesion = request.getSession(true);
 
@@ -262,8 +258,7 @@ public class ServletUpdateData extends HttpServlet {
 		int mes = Integer.parseInt(request.getParameter("mes"));
 		int año = Integer.parseInt(request.getParameter("año"));
 
-		boolean resultado = actualizar(user, nombres, email, dni, pais, ciudad,
-				direccion, postal, telefono, dia, mes, año);
+		boolean resultado = actualizar(user, nombres, email, dni, pais, ciudad, direccion, postal, telefono, dia, mes, año);
 
 		if (resultado) {
 			mensaje = "Datos guardados con exito";

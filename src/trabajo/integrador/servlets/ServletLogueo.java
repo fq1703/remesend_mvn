@@ -96,27 +96,26 @@ public class ServletLogueo extends HttpServlet {
 		if (u.equals(null)) {
 			mensaje = "Usuario o clave incorrecta";
 			request.setAttribute("a_mensaje", mensaje);
-			request.getRequestDispatcher("/login.jsp").forward(request,
-					response);
-		} else if (contraseña.equals(u.getPassword())) {
-			sesion.setAttribute("usr_login", u);
+			request.getRequestDispatcher("/login.jsp").forward(request,response);
 			
+		} else if (contraseña.equals(u.getPassword())) {
+			
+			sesion.setAttribute("usr_login", u);
 			sesion.setAttribute("a_mensaje", u.getNombre());
 			sesion.setAttribute("correo_login", u.getUsuario());
 			
 						
 			if (u.getTipou().equals("0")) {
-				request.getRequestDispatcher("/Menu.jsp").forward(
-						request, response);
-			} else {
-				request.getRequestDispatcher("/iCliente.jsp").forward(
-						request, response);
+				request.getRequestDispatcher("/Menu.jsp").forward(request, response);
 			}
-		} else {
+			else {
+				request.getRequestDispatcher("/iCliente.jsp").forward(request, response);
+			}
+		}
+		else {
 			mensaje = "Usuario o clave incorrecta";
 			request.setAttribute("a_mensaje", mensaje);
-			request.getRequestDispatcher("/login.jsp").forward(request,
-					response);
+			request.getRequestDispatcher("/login.jsp").forward(request,response);
 		}
 		
 		
