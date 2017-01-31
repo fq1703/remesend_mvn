@@ -1,4 +1,4 @@
-package trabajo.integrador.dto;
+package remesend.dto;
 
 import java.io.Serializable;
 

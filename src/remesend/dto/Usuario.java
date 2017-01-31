@@ -5,7 +5,7 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package trabajo.integrador.dto;
+package remesend.dto;
 
 public class Usuario  implements java.io.Serializable {
     /**

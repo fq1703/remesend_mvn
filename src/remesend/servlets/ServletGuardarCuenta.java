@@ -1,4 +1,4 @@
-package trabajo.integrador.servlets;
+package remesend.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
