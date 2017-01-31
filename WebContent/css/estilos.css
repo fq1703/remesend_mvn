@@ -1,0 +1,63 @@
+@CHARSET "ISO-8859-1";
+
+.cabecera{
+	
+	top: 0;
+	background-color: #1c0c4f;		 
+}
+
+.titulo {
+	
+	color:#FFFCFA; 
+	font-family: Helvetica;
+	font-size: 28px;
+ 	font-weight: bold;	
+}
+
+.otro {
+	
+	color:#000066; 
+	font-family: Helvetica;
+	font-size: 14px;
+ 	font-weight: bold;
+	
+}
+
+
+.error{
+	color: #FF0000;
+	font-family: Helvetica;
+	font-size: 10px;
+}
+
+.etiqueta {
+  color: #FFFCFA;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.link {
+  color: blue;
+  font-family: Helvetica;
+  font-size: 11px;
+}
+
+.normal {
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Helvetica;
+  font-size: 10px;
+  border: 2px; 
+}
+
+.transac1 {
+  color: #0c59cf;
+  font-family: Helvetica;
+  font-size: 20px;
+  text-align:center; 
+  
+}
+
+
