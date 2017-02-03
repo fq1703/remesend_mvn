@@ -23,5 +23,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="/Remesend_ClienteWS"/>
+	<classpathentry kind="lib" path="C:/Users/Juan Diego/Documents/ISOs/servlet-api-2.5.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
